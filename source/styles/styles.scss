@@ -2,6 +2,16 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/container.scss";
+@import "./global/wrapper.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/main.scss";
+@import "./blocks/breadcrumbs.scss";
+@import "./blocks/address.scss";
+@import "./blocks/information.scss";
+@import "./blocks/form.scss";
+@import "./blocks/field.scss";
+@import "./blocks/select.scss";

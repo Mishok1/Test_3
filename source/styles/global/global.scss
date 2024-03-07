@@ -1,1 +1,84 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PlusJakartaSans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9396a4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+#select-container {
+  height: 40px;
+  position: relative;
+  width: 420px;
+}
+
+#dropdown {
+  border: 1px solid #00b456;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #00b456 0%, #005a2b 100%);
+  color: #002d16;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+
+#dropdown option {
+  background: #005a2b;
+  color: #ffffff;
+}
+
+#dropdown option:nth-child(2) {
+  background: #002d16;
+}
+
+#dropdown option:nth-child(3) {
+  background: #005a2b;
+}
+
+#dropdown option:nth-child(4) {
+  background: #00b456;
+}
+
+#dropdown option:nth-child(5) {
+  background: #00e16c;
+  color: #002d16;
+}
+
+#dropdown option:nth-child(6) {
+  background: #00ff7a;
+  color: #002d16;
+}
+
+#dropdown-image {
+  height: 40px;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-100%);
+  width: 40px;
+}

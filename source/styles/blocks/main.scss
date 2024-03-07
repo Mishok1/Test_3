@@ -1,0 +1,29 @@
+.main {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000929;
+  margin: 0 0 16px 0;
+}
+
+.main__description {
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.main__breadcrumbs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px solid #F0EFFB;
+}
+
+.main__address {
+  margin: 32px 0;
+}

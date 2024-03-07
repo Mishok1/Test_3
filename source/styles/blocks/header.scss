@@ -1,5 +1,22 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding: 38px 48px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  border-bottom: 1.5px solid #F0EFFB;
+}
+
+.header__breadcrumbs {
+  color: #9396a4;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #9396a4 url("../../images/icons/arrow.svg") no-repeat center;
+  }
 }
