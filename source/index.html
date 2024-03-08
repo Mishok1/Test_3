@@ -24,11 +24,11 @@
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <p class="breadcrumbs__number breadcrumbs__number--checked"></p>
-            <p class="breadcrumbs__text">Personal</p>
+            <a class="breadcrumbs__link" href="#">Personal</a>
           </li>
           <li class="breadcrumbs__item">
             <p class="breadcrumbs__number">2</p>
-            <p class="breadcrumbs__text">Listing Information</p>
+            <a class="breadcrumbs__link" href="#">Listing Information</a>
           </li>
         </ul>
       </section>
@@ -44,10 +44,8 @@
             <!-- <legend class="visually-hidden">Main</legend> -->
             <div class="field__item">
               <p class="field__title">Property Type*</p>
-              <ul class="field__select select">
-                <li class="select__item">
-                  <a class="select__link" href="#">Select type</a>
-                </li>
+              <button class="field__select--button button button--form" type="button">Select type</button>
+              <ul class="field__select select select--opened">
                 <li class="select__item">
                   <a class="select__link" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,15 +199,35 @@
             </div>
             <div class="field__item">
               <p class="field__title">Bedrooms*</p>
-              <ul class="field__select select">
-                <li class="select__item"></li>
-              </ul>
+              <button class="field__select--button button button--form" type="button">Select type</button>
+              <!-- <ul class="field__select select select--opened">
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">1</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">2</span>
+                  </a>
+                </li>
+              </ul> -->
             </div>
             <div class="field__item">
               <p class="field__title">Baths*</p>
-              <ul class="field__select select">
-                <li class="select__item"></li>
-              </ul>
+              <button class="field__select--button button button--form" type="button">Select type</button>
+              <!-- <ul class="field__select select select--opened">
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">1</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">2</span>
+                  </a>
+                </li>
+              </ul> -->
             </div>
             <div class="field__item">
               <p class="field__title">Square Feet</p>
@@ -220,89 +238,91 @@
             <div class="field__wrapper">
               <div class="field__item">
                 <p class="field__title">Monthly Rent*</p>
-                <label class="field__label">
-                  <input class="field__input $" type="text" name="monthly-rent">
+                <label class="field__label field__label--price">
+                  <input class="field__input" type="text" name="monthly-rent">
                 </label>
               </div>
               <div class="field__item">
-                <p class="field__title">Security Deposit</p>
-                <label class="field__label">
-                  <input class="field__input $ !" type="text" name="security-deposit">
+                <p class="field__title field__title--tooltip">Security Deposit</p>
+                <label class="field__label field__label--price">
+                  <input class="field__input" type="text" name="security-deposit">
                 </label>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__field field">
             <h3 class="field__title">Select Amenities</h3>
-            <ul class="field__list">
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">A/C</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Deck</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Pet Friendly</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Free Parking Sports</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Pool</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Yard</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Free Wi-Fi</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Gym</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Hardwood Floor</span>
-                </label>
-              </li>
-              <li class="field__item">
-                <label class="field__label">
-                  <input class="field__input" type="checkbox">
-                  <span class="field__span">Jacuzzi</span>
-                </label>
-              </li>
-            </ul>
-            <button class="field__button button" type="button">Add amenity</button>
+            <div class="field__border-wrapper">
+              <ul class="field__list checkbox">
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="a/c" type="checkbox" checked>
+                    <span class="checkbox__span">A/C</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="deck" type="checkbox">
+                    <span class="checkbox__span">Deck</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="pet-friendly" type="checkbox" checked>
+                    <span class="checkbox__span">Pet Friendly</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="free-parking-spots" type="checkbox" checked>
+                    <span class="checkbox__span">Free Parking Spots</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="pool" type="checkbox">
+                    <span class="checkbox__span">Pool</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="yard" type="checkbox">
+                    <span class="checkbox__span">Yard</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="free-wi-fi" type="checkbox">
+                    <span class="checkbox__span">Free Wi-Fi</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="gym" type="checkbox" checked>
+                    <span class="checkbox__span">Gym</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="hardwood-floor" type="checkbox">
+                    <span class="checkbox__span">Hardwood Floor</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" name="amenities" value="jacuzzi" type="checkbox">
+                    <span class="checkbox__span">Jacuzzi</span>
+                  </label>
+                </li>
+              </ul>
+              <button class="field__button button" type="button">Add amenity</button>
+            </div>
           </fieldset>
           <fieldset class="form__field field">
             <h3 class="field__title">Description*</h3>
-            <textarea name="description" placeholder="Tell us about your home here"></textarea>
+            <textarea class="field__textarea" name="description" placeholder="Tell us about your home here"></textarea>
           </fieldset>
-          <button class="form__button button" type="submit">Submit</button>
+          <button class="form__button button button--primary" type="submit">Submit</button>
         </form>
       </section>
     </div>

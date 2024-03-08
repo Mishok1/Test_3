@@ -1,9 +1,12 @@
 .select {
-  margin: 0;
-  padding: 8px;
+  padding: 0;
   list-style-type: none;
-  border: 1px solid #E0DEF7;
+  background-color: #ffffff;
+  display: none;
 
+  &--opened {
+    display: block;
+  }
 }
 
 .select__item {
@@ -20,6 +23,7 @@
   align-items: flex-end;
   gap: 16px;
   color: #000929;
+  height: 44px;
 
   &:hover {
     color: #7065F0;

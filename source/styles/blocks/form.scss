@@ -1,0 +1,15 @@
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+}
+
+.form__button {
+  position: absolute;
+  margin-top: 32px;
+  bottom: -113px;
+  right: -24px;
+}
