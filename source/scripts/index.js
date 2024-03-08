@@ -21,5 +21,3 @@ buttonBaths.addEventListener('click', () => {
   selectBaths.classList.toggle('select--opened');
   buttonBaths.classList.toggle('button--opened');
 });
-
-
