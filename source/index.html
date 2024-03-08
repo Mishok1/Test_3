@@ -21,6 +21,7 @@
       <p class="main__description">Make sure you have filled in all the necessary fields and have uploaded all<br> the
         required files.</p>
       <section class="main__breadcrumbs breadcrumbs">
+        <h2 class="visually-hidden">Breadcrumbs</h2>
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <p class="breadcrumbs__number breadcrumbs__number--checked"></p>
@@ -41,11 +42,11 @@
         <form class="information__form form" action="#" method="post">
           <h3 class="visually-hidden">Main information</h3>
           <fieldset class="form__field field field--main">
-            <!-- <legend class="visually-hidden">Main</legend> -->
+            <legend class="visually-hidden">Main information</legend>
             <div class="field__item">
               <p class="field__title">Property Type*</p>
-              <button class="field__select--button button button--form" type="button">Select type</button>
-              <ul class="field__select select select--opened">
+              <button class="field__select-button button button--form " type="button">Select type</button>
+              <ul class="field__select select">
                 <li class="select__item">
                   <a class="select__link" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +176,7 @@
                 <li class="select__item">
                   <a class="select__link" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g opacity="0.5" clip-path="url(#clip0_45_148)">
+                      <g opacity="0.5" clip-path="url(#clip045148)">
                         <path
                           d="M4.16671 10.8333C4.62694 10.8333 5.00004 10.4602 5.00004 9.99999C5.00004 9.53975 4.62694 9.16666 4.16671 9.16666C3.70647 9.16666 3.33337 9.53975 3.33337 9.99999C3.33337 10.4602 3.70647 10.8333 4.16671 10.8333Z"
                           stroke="#000929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -187,9 +188,9 @@
                           stroke="#000929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </g>
                       <defs>
-                        <clipPath id="clip0_45_148">
+                        <clippath id="clip045148">
                           <rect width="20" height="20" fill="white" />
-                        </clipPath>
+                        </clippath>
                       </defs>
                     </svg>
                     <span class="select__text">Other</span>
@@ -199,8 +200,8 @@
             </div>
             <div class="field__item">
               <p class="field__title">Bedrooms*</p>
-              <button class="field__select--button button button--form" type="button">Select type</button>
-              <!-- <ul class="field__select select select--opened">
+              <button class="field__select-button button button-beds button--form " type="button">Select type</button>
+              <ul class="field__select select select-beds">
                 <li class="select__item">
                   <a class="select__link" href="#">
                     <span class="select__text">1</span>
@@ -211,12 +212,27 @@
                     <span class="select__text">2</span>
                   </a>
                 </li>
-              </ul> -->
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">3</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">4</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">5</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="field__item">
               <p class="field__title">Baths*</p>
-              <button class="field__select--button button button--form" type="button">Select type</button>
-              <!-- <ul class="field__select select select--opened">
+              <button class="field__select-button button button-baths button--form " type="button">Select type</button>
+              <ul class="field__select select select-baths">
                 <li class="select__item">
                   <a class="select__link" href="#">
                     <span class="select__text">1</span>
@@ -227,7 +243,22 @@
                     <span class="select__text">2</span>
                   </a>
                 </li>
-              </ul> -->
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">3</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">4</span>
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a class="select__link" href="#">
+                    <span class="select__text">5</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="field__item">
               <p class="field__title">Square Feet</p>
@@ -251,6 +282,7 @@
             </div>
           </fieldset>
           <fieldset class="form__field field">
+            <legend class="visually-hidden">Additionally</legend>
             <h3 class="field__title">Select Amenities</h3>
             <div class="field__border-wrapper">
               <ul class="field__list checkbox">
@@ -319,6 +351,7 @@
             </div>
           </fieldset>
           <fieldset class="form__field field">
+            <legend class="visually-hidden">Additional information</legend>
             <h3 class="field__title">Description*</h3>
             <textarea class="field__textarea" name="description" placeholder="Tell us about your home here"></textarea>
           </fieldset>

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #100A55;
+  color: #100a55;
   margin-bottom: 32px;
 }
 
@@ -20,7 +20,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../../images/icons/arrow-right-grey.svg");
+    background: url("../../images/icons/stack.svg#arrow-right-grey");
     margin-left: 10px;
   }
 }
@@ -35,16 +35,16 @@
   line-height: 16px;
   width: 28px;
   height: 28px;
-  background-color: #7065F0;
-  border: 2px solid #7065F0;
+  background-color: #7065f0;
+  border: 2px solid #7065f0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   &--checked {
-    background-color: #E0DEF7;
+    background-color: #e0def7;
   }
 
   &--checked::before {

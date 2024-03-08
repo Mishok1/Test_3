@@ -1,5 +1,5 @@
 .select {
-  padding: 0;
+  padding: 8px;
   list-style-type: none;
   background-color: #ffffff;
   display: none;
@@ -26,12 +26,12 @@
   height: 44px;
 
   &:hover {
-    color: #7065F0;
-    background-color: #F0EFFB;
+    color: #7065f0;
+    background-color: #f0effb;
   }
 
   &:hover svg path {
-    stroke: #7065F0;
+    stroke: #7065f0;
   }
 }
 

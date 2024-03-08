@@ -10,15 +10,15 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  border: 1.5px solid #E0DEF7;
+  border: 1.5px solid #e0def7;
   border-radius: 8px;
   padding: 8px 16px;
   display: block;
 
   &:hover {
-    background-color: #E8E6F9;
-    color: #7065F0;
-    border: 1.5px solid #7065F0;
+    background-color: #e8e6f9;
+    color: #7065f0;
+    border: 1.5px solid #7065f0;
   }
 
   &:active {
@@ -27,13 +27,11 @@
 }
 
 .checkbox__input:checked + .checkbox__span {
-  background-color: #E8E6F9;
-  color: #7065F0;
-  border: 1.5px solid #7065F0;
+  background-color: #e8e6f9;
+  color: #7065f0;
+  border: 1.5px solid #7065f0;
 }
 
 .checkbox__input {
   display: none;
 }
-
-
